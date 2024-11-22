@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diccionario</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-
-    <div class="first-box">
-
-        <header>
-            <h1>Diccionario</h1>
-            <a id="add_word" href="./new-word.html">Añadir palabra</a>
-            <img src="" alt="">
-        </header>
-        
-        <form class="space-word">
-            <input type="text" id="traduction" name="Palabra" placeholder="Ingrese palabra a traducir" value="Ingrese una palabra">
-            <button id="btn-traduction" type="submit">Traducir</button>
-        </form>
-
-        <div class="languajes"> 
-            <button id="English" type="submit">Inglés-Español</button>
-            <button id="Spanish" for="Spanish-English">Español-Inglés</button>
-        </div>
-        
-    </div>
-
-
-    <div class="principal-box">
-        <div class="second-box">
-            <h2>Categorias - Categories</h2>
-            <a href="">Animales</a>
-            <a href="">Frutas</a>
-            <a href="">Colores</a>
-            <a href="">Descripción física</a>
-            <a href="">Habilidades</a>
-            <a href="">Verbos</a>
-
-        </div>
-
-        <div class="third-box">
-            <h2>organization</h2>
-
-        </div>
-    </div>
-
+    <main>
+        <div class="first-box">
+            <header>
+                <h1>Diccionario</h1>
+                <a id="add-word" href="./templates/new-word.html">Añadir palabra</a>
+                <a id="see-dictionary" href="./templates/word-dictionary.html">Mostrar Diccionario</a>
+                <img src="" alt="">
+            </header>
+            
+            <form class="space-word">
+                <input type="text" id="traduction" name="Palabra" placeholder="Ingrese palabra a traducir" value="Ingrese una palabra">
+                <button id="btn-traduction" type="submit">Traducir</button>
+            </form>
     
+            <select name="Translate" id="languajes">
+                <option value="en-es">Inglés-Español</option>
+                <option value="es-en">Español-Inglés</option>
+            </select>
+            
+        </div>
+        
+    
+    
+        <div class="principal-box">
+            <div class="second-box">
+                <h2>Categorias - Categories</h2>
+            <!-- </div> -->
+        
+            <!-- <div> -->
+                <input value="fruits"  name="opcion" type="radio">Frutas</button>
+                <input value="colors"   name="opcion"  type="radio">Colores</button>
+                <input value="description" name="opcion"  type="radio">Descripción física</button>
+                <input value="skills" name="opcion" type="radio">Habilidades</button>
+                <input value="verbs" name="opcion" type="radio">Verbos</button>
+        
+        
+            </div>
+        
+            <div class="third-box">
+                <h2>Organization</h2>
+        
+            
+        
+            </div>
+        </div>
+    </main>
+    
+
+
 </body>
 </html>

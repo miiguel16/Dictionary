@@ -1,30 +1,63 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
 }
 
 .first-box{
   width: 100%;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(64, 52, 52, 0.416);
 }
+
+h1{
+  animation: changeColor 1s infinite;
+}
+
+@keyframes changeColor {
+  50%{
+    color: #ff00ff;
+  }
+}
+
 
 header {
   width: 100%;
   padding: 15px;
-  margin-left: 450px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-#add_word {
+#add-word {
   padding: 6px;
-  margin-right: 80px;
   font-size: 18px;
   display: flex;
   justify-content: end;
   color: black;
+  text-decoration: none;
+}
+
+#see-dictionary {
+  padding: 6px;
+  margin-left: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: end;
+  color: black;
+  text-decoration: none;
+}
+
+#add-word:hover,#see-dictionary:hover {
+  color: #ff00ff;
+  text-decoration:underline;
 }
 
 .space-word {
@@ -48,24 +81,12 @@ header {
   margin-left: 10px;
 }
 
-.languajes {
-  height: 24px;
-  display: flex;
-  padding: 30px;
-}
-
-#English {
-  margin-left: 490px;
-  width: 140px;
-}
-
-#Spanish {
-  margin-left: 100px;
-  width: 140px;
+#languajes {
+  width: 10%;
 }
 
 
-/* --------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
 
 .principal-box{
   width: 100%;
@@ -78,24 +99,26 @@ header {
 /* ----------------------------------------------------------------------- */
 .second-box {
   width: 50%;
-  padding: 60px;
   font-size: 20px;
   display: flex;
-  justify-content: center;
+  margin-top: 70px;
+  align-items: center;
   flex-direction: column;
 }
 
-.second-box a {
+.second-box radio-button {
   margin-top: 10px;
 }
 
 
 
 
-/* ---------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
 
-.thir-box {
+.third-box {
   width: 50%;
-  padding: 60px;
+  margin-top: 70px;
+  font-size: 20px;
   display: flex;
+  justify-content: center;
 }
