@@ -1,5 +1,54 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
+  }
+  
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+
+header {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+  
+/* ----------------------------------------------------------------------- */
+
+.principal-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+.second-box {
+  width: 50%;
+  font-size: 20px;
+  display: flex;
+  margin-top: 70px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second-box radio-button {
+  margin-top: 10px;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- */
+
+.third-box {
+  width: 50%;
+  margin-top: 70px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
