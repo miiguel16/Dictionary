@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+header {
+    width: 100%;
+    padding: 25px;
+    margin-left: 400px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #diccionario {
+    padding: 6px;
+    margin-right: 450px;
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
+    color: black;
+  }
