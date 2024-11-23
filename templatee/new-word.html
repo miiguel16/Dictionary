@@ -1,14 +1,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style2.css">
+    <link rel="stylesheet" href="../style/style2.css">
     <title>Añadir una nueva palabra</title>
 </head>
 <body>
 
     <header>
-        <h1>Añadir nueva palabra</h1>
-        <a id="diccionario" href="../index.html">Diccionario</a>
+        <a id="index" href="../index.html">Diccionario</a>
     </header>
+
+    <div class="container" >
+        <h1>Añadir palabra</h1>
+        <form id="myform">
+            <input type="text" placeholder="Palabra en Inglés" id="word-english">
+            <input type="text" placeholder="Palabra en Español" id="word-spanish">
+            <input type="text" placeholder="Ingrese un ejemplo de uso" id="example-word">
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+
+    </div>
     
 </body>
 </html>

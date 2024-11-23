@@ -4,24 +4,82 @@
   box-sizing: border-box;
 }
 
+header {
+  padding: 5%;
+  font-size: 18px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 40%;
+}
+
+#index{
+  color: #ffd700;
+  text-decoration: none;
+}
+
+#index:hover {
+  color: white;
+  text-decoration:underline;
+}
+
 body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
 
-header {
-    width: 100%;
-    padding: 25px;
-    margin-left: 400px;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  #diccionario {
-    padding: 6px;
-    margin-right: 450px;
-    font-size: 18px;
-    display: flex;
-    justify-content: end;
-    color: black;
-  }
+.container {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background: #000;
+  border: 1px solid #D4AF37;
+  border-radius:40px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form{
+  max-width: 400px;
+
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #000;
+  color:#fff;
+  font-size: 16px;
+  border-bottom: 2px solid #ffd700;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffd700;
+  color:#fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px; 
+}
+
+button:hover {
+  background-color: #ffd700;
+}
