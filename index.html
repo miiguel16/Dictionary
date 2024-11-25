@@ -10,27 +10,27 @@
 
 <body>
     <main>
+        <header>
+            <a id="add-word" href="./templatee/new-word.html">Añadir palabra</a>
+            <a id="see-dictionary" href="./templatee/word-dictionary.html">Mostrar Diccionario</a>
+        </header>
+        
         <div class="first-box">
-            <header>
+            
+            <div class="container">
                 <h1>Diccionario</h1>
-                <img src="" alt="">
-            </header>
-
-            <div class="templates"> 
-                <a id="add-word" href="./templatee/new-word.html">Añadir palabra</a>
-                <a id="see-dictionary" href="./templatee/word-dictionary.html">Mostrar Diccionario</a>
+                <form class="space-word">
+                    <input type="text" placeholder="Ingrese palabra a traducir" id="traduction">
+                    <button id="btn-traduction" type="submit">Traducir</button>
+                    <!-- aquí ira la respuesta de la traduccion del usuario junto con un ejemplo que explica la palabra -->
+                </form>
+        
+                <select name="Translate" id="languajes">
+                    <option value="en-es">Inglés-Español</option>
+                    <option value="es-en">Español-Inglés</option>
+                </select>
+                
             </div>
-
-            <form class="space-word">
-                <input type="text" id="traduction" name="Palabra" placeholder="Ingrese palabra a traducir" value="Ingrese una palabra">
-                <button id="btn-traduction" type="submit">Traducir</button>
-                <!-- aquí ira la respuesta de la traduccion del usuario junto con un ejemplo que explica la palabra -->
-            </form>
-    
-            <select name="Translate" id="languajes">
-                <option value="en-es">Inglés-Español</option>
-                <option value="es-en">Español-Inglés</option>
-            </select>        
             
         </div>
         

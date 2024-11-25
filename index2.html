@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/2style.css">
+    <title>Añadir una nueva palabra</title>
+</head>
+
+<body>
+
+        <header>
+            <a id="index" href="./templatee/new-word.html">Añadir palabra</a>
+            <a id="index" href="./templatee/word-dictionary.html">Mostrar Diccionario</a>
+        </header>
+
+        <div class="container" >
+            <h1>Diccionario iterativo</h1>
+
+            <form class="space-word">
+                <input type="text" placeholder="Ingrese palabra a traducir" id="traduction">
+                <button id="btn-traduction" type="submit">Traducir</button>
+                <!-- aquí ira la respuesta de la traduccion del usuario junto con un ejemplo que explica la palabra -->
+            </form> 
+
+            <select name="Translate" id="languajes">
+                <option value="en-es">Inglés-Español</option>
+                <option value="es-en">Español-Inglés</option>
+            </select>
+
+        </div>
+
+
+</body>
+</html>
