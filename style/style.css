@@ -1,156 +1,110 @@
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body{
-  width: 100vw;
-  height: 100vh;
-  background: #314755;
-  background: -webkit-linear-gradient(to right, #26a0da, #314755); 
-  background: linear-gradient(to right, #26a0da, #314755);
-  display: flex;
-
-}
-
-.first-box{
-  width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-h1{
-  animation: changeColor 1s infinite;
-}
-
-@keyframes changeColor {
-  50%{
-    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
-}
+  
+  body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #202020;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header {
+    padding: 5%;
+    font-size: 18px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content:end;
+    margin-bottom: 40%;
+    gap: 15px;
+  }
+  
+  #index{
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+    display: flex;
+  }
+  
+  #index:hover {
+    color: white;
+    text-decoration:underline;
+  }
+  
+  .container {
+    width: 550px;
+    height: 450px;
+    padding: 50px;
+    border-radius:40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #000;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+  } 
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form{
+    display: flex;
+    max-width: 400px;
+  }
 
-header {
-  margin-bottom: 50%;
-  font-size: 20px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
-
-#add-word {
-  font-size: 20px;
-  width: 150px;
-  position: absolute;
-  color: black;
-  display: flex;
-  text-decoration: none;
-}
-
-#see-dictionary {
-  margin-left: 10px;
-  font-size: 20px;
-  width: 170px;
-  position: absolute;
-  color: black;
-  display: flex;
-  text-decoration: none;
-}
-
-#add-word:hover,#see-dictionary:hover {
-  color: white;
-  text-decoration:underline;
-}
-
-
-/* ------------------------------------------------------------------------------------------------------ */
-
-
-.container {
-  width: 550px;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  background: #000;
-  border: 1px solid #D4AF37;
-  border-radius:40px;
-  padding: 20px;
-}
-
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-form{
-  max-width: 400px;
-
-}
-
-input {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  background-color: #000;
-  color:#fff;
-  font-size: 16px;
-  border-bottom: 2px solid #ffd700;
-}
-
-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #ffd700;
-  color:#fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-radius: 5px; 
-}
-
-button:hover {
-  background-color: #ffd700;
-}
-
+  .space-word {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #000;
+    color:#fff;
+    font-size: 16px;
+    border-bottom: 2px solid gray;
+  }
+  
+  button {
+    padding: 5px 24px;
+    border: none;
+    background-color: gray;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px; 
+  }
+  
+  button:hover {
+    background-color: gray;
+  }
+  
 
 
 
-/* ----------------------------------------------------------------------------------------------------------------------- */
 
-.space-word {
-  padding: 25px;
-  display: flex;
-  justify-content: center;
-}
 
-#traduction {
-  height: 22px;
-  width: 400px;
-  display: flex;
-}
 
-#btn-traduction {
-  height: 22px;
-  width: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-}
 
-#languajes {
-  width: 24%;
-  margin-top: 18px;
-  display: flex;
-  justify-content: center;
-}
 
+
+
+  #languajes {
+    width: 30%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
